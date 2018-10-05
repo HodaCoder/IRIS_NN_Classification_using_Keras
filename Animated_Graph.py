@@ -16,4 +16,4 @@ def plot_for_offset(angle):
     return image
 
 # kwargs_write = {'fps':10, 'quantizer':'nq'}
-imageio.mimsave('./IRIS_NN.gif', [plot_for_offset(i) for i in range(0,360,4)], fps=4)
+imageio.mimsave('./IRIS_NN.gif', [plot_for_offset(i) for i in range(0,360,3)], fps=10)
