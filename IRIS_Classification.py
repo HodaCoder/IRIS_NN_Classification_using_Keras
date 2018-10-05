@@ -172,8 +172,10 @@ plt.show()
 '''
 
 # plotting the result for all data
+
 labelTups = [(iris_data_set.target_names[0], 0), (iris_data_set.target_names[1], 1), (iris_data_set.target_names[2], 2)]
-fig = plt.figure(figsize=(10.5, 8))
+fig = plt.figure(figsize=(6, 4))
+plt.rcParams.update({'font.size': 7})
 ax = fig.add_subplot(111, projection='3d', elev=-150, azim=110)
 arrow_prop_dict = dict(mutation_scale=20, arrowstyle='-|>', color='k', shrinkA=0, shrinkB=0)
 # plot ox0y0z0 axes
@@ -201,7 +203,8 @@ colors = [sc.cmap(sc.norm(i)) for i in [0, 1, 2]]
 custom_lines = [plt.Line2D([], [], ls="", marker='.',
                 mec='k', mfc=c, mew=.1, ms=20) for c in colors]
 ax.legend(custom_lines, [lt[0] for lt in labelTups],
-          bbox_to_anchor=(1.0, .5))
+          bbox_to_anchor=(0.3, .75))
+fig.tight_layout()
 plt.show()
 
 
@@ -244,5 +247,6 @@ colors = [sc.cmap(sc.norm(i)) for i in [0, 1, 2]]
 custom_lines = [plt.Line2D([], [], ls="", marker='.',
                 mec='k', mfc=c, mew=.1, ms=20) for c in colors]
 ax.legend(custom_lines, [lt[0] for lt in labelTups],
-          bbox_to_anchor=(1.0, .5))
+          bbox_to_anchor=(0.3, .75))
+fig.tight_layout()
 plt.show()
