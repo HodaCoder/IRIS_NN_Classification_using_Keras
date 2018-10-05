@@ -6,6 +6,8 @@ This is a Machine Learning project using Neural Network to predict/classify the 
 
 Use with Python 3.6 and Keras.
 
+![alt text](https://github.com/HodaCoder/IRIS_NN_Classification_using_Keras/blob/master/IRIS_NN.gif)
+
 ## Authors
 
 * **Hoda Sadeghian** 
