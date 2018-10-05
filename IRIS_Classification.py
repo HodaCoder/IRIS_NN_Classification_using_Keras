@@ -220,7 +220,7 @@ wrong_prediction_lr_indexes=np.asarray(np.where(validation_lr_vector == 0))
 
 # plotting the result for Logistic Regression
 labelTups = [(iris_data_set.target_names[0], 0), (iris_data_set.target_names[1], 1), (iris_data_set.target_names[2], 2)]
-fig = plt.figure(figsize=(10.5, 8))
+fig = plt.figure(figsize=(6, 4))
 ax = fig.add_subplot(111, projection='3d', elev=-150, azim=110)
 arrow_prop_dict = dict(mutation_scale=20, arrowstyle='-|>', color='k', shrinkA=0, shrinkB=0)
 # plot ox0y0z0 axes
